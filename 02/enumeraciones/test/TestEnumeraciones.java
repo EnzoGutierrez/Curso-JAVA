@@ -1,10 +1,14 @@
 package enumeraciones.test;
 
+import enumeraciones.enumeracion.Continentes;
 import enumeraciones.enumeracion.Dias;
 
 public class TestEnumeraciones {
     public static void main(String[] args) {
         indicarDiaSemana(Dias.LUNES);
+
+        System.out.println("El 2do continenente es: " + Continentes.EUROPA);
+        System.out.println("El 2do continenente tiene: " + Continentes.EUROPA.getPaises() + " paises");
     }
 
     private static void indicarDiaSemana(Dias dias){
